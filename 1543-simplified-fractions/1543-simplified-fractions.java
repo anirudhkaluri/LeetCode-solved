@@ -16,7 +16,7 @@ class Solution {
         int limit=(int)Math.sqrt(j)+1;
         if(i%j==0 && j!=1)
             return true;
-        for(int z=2;z<=j;z++){
+        for(int z=2;z<=j/2;z++){
             if(i%z==0 && j%z==0)
                 return true;
         }
